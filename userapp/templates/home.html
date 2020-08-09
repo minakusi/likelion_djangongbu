@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block contents %}
+<html>
+<header>
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</header>
+
+<body>
+    <div>
+        <h1>홈 화면입니다</h1>
+        <h2 id="h21">CSS를 연결하지 않으면 검은색으로 보임</h2>
+        <h2 id="h22">JS를 연결하지 않으면 마우스를 올려도 검은색으로 보임</h2>
+    </div>
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}
