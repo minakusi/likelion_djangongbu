@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block contents %}
+<html>
+
+<header>
+    <title>USER DETAIL</title>
+</header>
+
+<body>
+    <div>
+        <h1>회원 정보 화면입니다</h1>
+        <p>ID : {{user.username}}</p>
+    </div>
+</body>
+
+</html>
+{% endblock %}
